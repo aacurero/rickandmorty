@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCharacterMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:focusable="true"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/ivCharacterPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="@dimen/smallMargin"
+            android:layout_marginVertical="@dimen/smallMargin" />
+
+        <TextView
+            android:id="@+id/tvCharacterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/normalMargin"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normalText" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

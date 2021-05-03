@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">R&amp;M App</string>
+    <string name="character_url">character/</string>
+
+    <string name="title_name">Nombre</string>
+    <string name="title_status">Estatus</string>
+    <string name="title_species">Especie</string>
+    <string name="title_type">Tipo</string>
+    <string name="title_gender">Género</string>
+    <string name="title_origin">Origen</string>
+    <string name="title_location">Ubicación</string>
+    <string name="title_url">URL</string>
+    <string name="msg_loading">Cargando…</string>
+    <string name="title_login_google">Inicia sesión con Google</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="msg_logged_in">Sesión iniciada</string>
+    <string name="msg_login_error">No fue posible iniciar sesión</string>
+</resources>

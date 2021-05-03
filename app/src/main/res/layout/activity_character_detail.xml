@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallMargin"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smallMargin">
+
+            <ImageView
+                android:id="@+id/ivCharDetailPic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vSeparator0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/ivCharDetailPic" />
+
+            <TextView
+                android:id="@+id/tvNameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator0" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvNameTitle" />
+
+            <View
+                android:id="@+id/vSeparator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvStatusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_status"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator1" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvStatusTitle" />
+
+            <View
+                android:id="@+id/vSeparator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvStatus" />
+
+            <TextView
+                android:id="@+id/tvSpeciesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_species"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator2" />
+
+            <TextView
+                android:id="@+id/tvSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvSpeciesTitle" />
+
+            <View
+                android:id="@+id/vSeparator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvSpecies" />
+
+            <TextView
+                android:id="@+id/tvTypeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_type"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator3" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvTypeTitle" />
+
+            <View
+                android:id="@+id/vSeparator4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvType" />
+
+            <TextView
+                android:id="@+id/tvGenderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_gender"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator4" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvGenderTitle" />
+
+            <View
+                android:id="@+id/vSeparator5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvGender" />
+
+            <TextView
+                android:id="@+id/tvOriginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_origin"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator5" />
+
+            <TextView
+                android:id="@+id/tvOrigin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvOriginTitle" />
+
+            <View
+                android:id="@+id/vSeparator6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvOrigin" />
+
+            <TextView
+                android:id="@+id/tvLocationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_location"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator6" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvLocationTitle" />
+
+            <View
+                android:id="@+id/vSeparator7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvLocation" />
+
+            <TextView
+                android:id="@+id/tvUrlTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:text="@string/title_url"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vSeparator7" />
+
+            <TextView
+                android:id="@+id/tvUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tvUrlTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+
